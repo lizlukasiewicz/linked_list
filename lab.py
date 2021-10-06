@@ -1,4 +1,4 @@
-# Definition for singly-linked list.
+"""Definition for singly-linked list. """
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -7,18 +7,23 @@ class ListNode:
 
 class Solution:
     def reverseList(self, head: ListNode)-> ListNode:
-        curr = head # reference to the head c
+        """reference to the head c """
+        curr = head 
         prev = None
-        while curr is not None: # curr is node(2)
+        """curr is node(2) """
+        while curr is not None:  
             print(f'current value:: {curr.val}')
             print(f'next value: {curr.next.val}')
             print(f'previous value: {prev}')
-            nextTemp = curr.next # storing curr.next in a temporary variable 
-            #curr.next is Node(3) and we store node(3) in nextTemp
-            curr.next = prev #assigning next to previous node | we assign cur.next to node(1)
+            """ storing curr.next in a temporary variable"""
+            nextTemp = curr.next  
+            """curr.next ^^ is Node(3) and we store node(3) in nextTemp"""
+            """assigning next to previous node | we assign cur.next to node(1) """
+            curr.next = prev 
             print('reassigning previous')
             prev = curr
             curr = nextTemp
         return prev
 
 head = [1,2,3,4,5]
+

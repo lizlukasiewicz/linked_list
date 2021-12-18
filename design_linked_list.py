@@ -1,5 +1,4 @@
-# CLAS
-SES MUST BE CAPITAL CASE(all words begin w/capital letter)
+# CLASSES MUST BE CAPITAL CASE(all words begin w/capital letter)
 class Node:
     def __init__(self, data):
         self.data = data

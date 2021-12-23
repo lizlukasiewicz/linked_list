@@ -14,7 +14,7 @@ class Solution:
         
         # traverse list 1
         
-        # traverse list 2
+        # traverse list 2s
         
         #at each step, compare the values at each node
         
